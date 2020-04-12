@@ -1,0 +1,42 @@
+.toolbar {
+    h1 {
+      font-size: 32px;
+      transition: 0.25s ease-in-out;
+    }
+    //added mat icon
+    mat-icon{
+        color: red;
+        font-size: 32px;
+        height: 32px;
+        width: 32px;
+        transition: 1.00s ease-in-out;
+    }
+    h1:hover{
+        color: red;
+        transform: scale(1.25);
+    }
+    mat-icon:hover{
+        
+        color: royalblue;
+        transform: rotate(360deg);
+    }
+    .about:hover{
+      border-bottom: 4px solid white;
+      color: white;
+      transform: scale(1);
+      
+      
+    }
+    
+  }
+  mat-toolbar {
+    background: rgba(20, 20, 20, 0.8);
+  }
+
+  .space{
+    justify-content: space-between;
+  }
+
+
+
+  

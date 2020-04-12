@@ -1,0 +1,21 @@
+@import "~@angular/material/theming";
+@import './theme_mixins.scss';
+
+@include mat-core();
+
+$Spark-primary: mat-palette($mat-red,500, 50, 900);
+$Spark-accent: mat-palette($mat-blue-grey, 50, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Spark-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$Spark-theme: mat-dark-theme(
+  $Spark-primary,
+  $Spark-accent,
+  $Spark-warn
+);
+
+
+@include angular-material-theme($Spark-theme);
+@include theme-based-configurations($Spark-theme);
